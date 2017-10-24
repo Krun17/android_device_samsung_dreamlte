@@ -1,5 +1,5 @@
 # Inherit device configuration
-$(call inherit-product, device/samsung/dream2lte/device_dreamlte.mk)
+$(call inherit-product, device/samsung/dreamlte/device_dreamlte.mk)
 $(call inherit-product, device/samsung/dream-common/dream-common.mk)
 
 # Inherit from the 64 bit configuration
@@ -9,7 +9,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
 # Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Device identifier
 PRODUCT_NAME := lineage_dreamlte
